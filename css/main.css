@@ -395,7 +395,7 @@ html, body {
 }
 
 html {
-    background: url(../images/gaspar-sax-web-5.jpg) no-repeat top right fixed;
+    background: url/*(../images/gaspar-sax-web-5.jpg)*/ no-repeat top right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
