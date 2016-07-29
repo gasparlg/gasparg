@@ -927,6 +927,10 @@ and (-webkit-min-device-pixel-ratio: 1)  {
             #spaceup {
                 display: none;
             }
+        
+            header img {
+                margin-top: 5em;
+            }
 
 		/* BG */
 
@@ -1047,6 +1051,10 @@ and (-webkit-min-device-pixel-ratio: 1)  {
             #main {
                 height: inherit;
                 position: absolute;
+            }
+        
+            header img {
+                margin-top: 5em;
             }
 
 		/* BG */
@@ -1195,6 +1203,10 @@ and (-webkit-min-device-pixel-ratio: 1)  {
         height: inherit;
         position: absolute;
     }
+    
+    header img {
+        margin-top: 5em;
+    }
 }
 
 
@@ -1230,6 +1242,10 @@ and (-webkit-min-device-pixel-ratio: 1)  {
     #main {
         height: inherit;
         position: absolute;
+    }
+    
+    header img {
+        margin-top: 5em;
     }
 }
 
@@ -1276,6 +1292,10 @@ and (-webkit-min-device-pixel-ratio: 1)  {
     #main {
         height: inherit;
         position: absolute;
+    }
+    
+    header img {
+        margin-top: 5em;
     }
 
 
