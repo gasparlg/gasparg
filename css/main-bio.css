@@ -1010,6 +1010,22 @@
 		} 
 }
 
+/* iPad Mini */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1)  { 
+    
+    #bg { 
+        -moz-animation: none;
+        -webkit-animation: none;
+        -ms-animation: none;
+        animation: none;
+    }
+}
+    
+
 /*   @media number 3 */
 
     @media screen and (max-width: 1150px) {
@@ -1082,6 +1098,7 @@
 
 		/* BG */
 
+        /*
 			@-moz-keyframes bg {
 				0% {
 					-moz-transform: translate3d(0,0,0);
@@ -1151,6 +1168,15 @@
 			background-size: 300px auto;
 			width: 900px;
 		}
+        
+        */
+        
+        #bg { 
+            -moz-animation: none;
+            -webkit-animation: none;
+            -ms-animation: none;
+            animation: none;
+        }
 
 	/* Header */
 
