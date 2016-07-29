@@ -964,6 +964,7 @@
 		#bg {
 			background-size: 300px auto;
 			width: 900px;
+            background-repeat: no-repeat;
 		}
 
 	/* Header */
@@ -1071,6 +1072,7 @@
 		#bg {
 			background-size: 412.5px auto;
 			width: 1237.5px;
+            background-repeat: no-repeat;
 		}
 
 	/* Header */
