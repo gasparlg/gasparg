@@ -4,7 +4,7 @@
 # Site settings
 title: GASPAR L.G.
 description: "Personal website of Gaspar L.G."
-baseurl: "/gasparg"
+baseurl: "/"
 url: "http://gasparlg.github.io/gasparg"
 tagline: "GASPAR L.G."
 
