@@ -880,6 +880,10 @@
 			body, input, select, textarea {
 				font-size: 11pt;
 			}
+        
+            body {
+                overflow: visible;
+            }
 
 		/* BG */
 
@@ -978,6 +982,10 @@
 /* Mobile (Portrait) */
 
 	@media screen and (max-width: 480px) {
+        
+            body {
+                overflow: visible;
+            }
 
 		/* BG */
 
