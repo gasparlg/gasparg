@@ -868,6 +868,22 @@
 			width: 2250px;
 		} }
 
+/* iPad Mini */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1)  { 
+    
+    #bg { 
+        -moz-animation: none;
+        -webkit-animation: none;
+        -ms-animation: none;
+        animation: none;
+    }
+
+}
+
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
