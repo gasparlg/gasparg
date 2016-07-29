@@ -57,6 +57,10 @@
 
 /* Basic */
 
+    
+    #spaceup {
+        display: none;
+    }
 
     #lang1 {
         position: absolute;
@@ -713,6 +717,10 @@
 			body, input, select, textarea {
 				font-size: 13pt;
 			}
+        
+            #spaceup {
+                display: none;
+            }
 
 		/* BG */
 
@@ -795,6 +803,10 @@
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
+        
+        #spaceup {
+            display: none;
+        }
 
 		/* BG */
 
@@ -882,6 +894,10 @@ and (-webkit-min-device-pixel-ratio: 1)  {
         animation: none;
         width: 100%;
     }
+    
+    #spaceup {
+        display: none;
+    }
 
 }
 
@@ -906,6 +922,10 @@ and (-webkit-min-device-pixel-ratio: 1)  {
             #main {
                 height: inherit;
                 position: absolute;
+            }
+        
+            #spaceup {
+                display: none;
             }
 
 		/* BG */
