@@ -884,6 +884,11 @@
             body {
                 overflow: visible;
             }
+        
+            #main {
+                height: inherit;
+                position: absolute;
+            }
 
 		/* BG */
 
@@ -985,6 +990,11 @@
         
             body {
                 overflow: visible;
+            }
+        
+            #main {
+                height: inherit;
+                position: absolute;
             }
 
 		/* BG */
@@ -1113,6 +1123,11 @@
     body {
 		overflow: visible;
 	}
+    
+    #main {
+        height: inherit;
+        position: absolute;
+    }
 }
 
 
@@ -1144,6 +1159,11 @@
     body {
 		overflow: visible;
 	}
+    
+    #main {
+        height: inherit;
+        position: absolute;
+    }
 }
 
 
@@ -1185,6 +1205,11 @@
     body {
 		overflow: visible;
 	}
+    
+    #main {
+        height: inherit;
+        position: absolute;
+    }
 
 
 
