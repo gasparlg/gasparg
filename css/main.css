@@ -81,7 +81,7 @@
 
 	body {
 		background: #fff;
-		overflow: hidden;
+		overflow: visible;
 	}
 
 		body.loading * {
