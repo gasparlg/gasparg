@@ -837,6 +837,10 @@
 				font-size: 13pt;
 			}
         
+            body {
+                overflow: visible;
+            }
+        
             #header p {
                 margin-right: 15em;
                 margin-left: 15em;
@@ -924,6 +928,10 @@
 				font-size: 12pt;
 			}
         
+            body {
+                overflow: visible;
+            }
+        
             #header p {
                 margin-right: 13em;
                 margin-left: 13em;
@@ -1009,6 +1017,9 @@
                 margin-right: 9em;
                 margin-left: 9em;
             }
+        body {
+            overflow: visible;
+        }
     }
 
 
@@ -1022,6 +1033,9 @@
         #wrapper {
                 height: 100em;
             }
+        body {
+            overflow: visible;
+        }
     }
 
 /*   @media number 5 */
@@ -1034,6 +1048,9 @@
         #wrapper {
                 height: 100em;
             }
+        body {
+            overflow: visible;
+        }
     }
 
 /* Mobile */
@@ -1045,6 +1062,10 @@
 			body {
 				min-width: 320px;
 			}
+        
+            body {
+                overflow: visible;
+            }
 
 			body, input, select, textarea {
 				font-size: 11pt;
@@ -1161,6 +1182,10 @@
     #wrapper {
                 height: 90em;
             }
+    
+    body {
+		overflow: visible;
+	}
 }
 
 /* Mobile (Portrait) */
@@ -1180,6 +1205,10 @@
         
             #wrapper {
                 height: 120em;
+            }
+        
+            body {
+                overflow: visible;
             }
 
 		/* BG */
@@ -1276,6 +1305,10 @@
     #header h1 {
         font-size: 2em;
     }
+    
+    body {
+		overflow: visible;
+	}
 }
 
 
@@ -1292,6 +1325,10 @@
     #header h1 {
         font-size: 1.5em;
     }
+    
+    body {
+		overflow: visible;
+	}
 }
 
 
