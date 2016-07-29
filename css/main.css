@@ -196,6 +196,7 @@
 		-webkit-transform: translate3d(0,0,0);
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
+        
 	/* Set your background with this */
 
 		background: #348cb2 url("../images/bg.jpg") bottom left;
@@ -965,6 +966,10 @@
 			background-size: 300px auto;
 			width: 900px;
             background-repeat: no-repeat;
+            -moz-animation: bg 0s linear infinite;
+            -webkit-animation: bg 0s linear infinite;
+            -ms-animation: bg 0s linear infinite;
+            animation: bg 0s linear infinite;
 		}
 
 	/* Header */
@@ -1003,6 +1008,8 @@
             }
 
 		/* BG */
+        
+        /*
 
 			@-moz-keyframes bg {
 				0% {
@@ -1067,12 +1074,20 @@
 				-ms-transform: translate3d(-412.5px,0,0);
 				transform: translate3d(-412.5px,0,0);
 			}
+            
+            
 		}
+        
+        */
 
 		#bg {
 			background-size: 412.5px auto;
 			width: 1237.5px;
             background-repeat: no-repeat;
+            -moz-animation: bg 0s linear infinite;
+            -webkit-animation: bg 0s linear infinite;
+            -ms-animation: bg 0s linear infinite;
+            animation: bg 0s linear infinite;
 		}
 
 	/* Header */
