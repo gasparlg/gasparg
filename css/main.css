@@ -1101,6 +1101,10 @@
         /*border-bottom: 1px solid white;
         right: 22em;*/
     }  
+    
+    body {
+		overflow: visible;
+	}
 }
 
 
@@ -1127,7 +1131,11 @@
         text-align: left;
         border-bottom: none;
         right: 18em;
-    }  
+    }
+    
+    body {
+		overflow: visible;
+	}
 }
 
 
@@ -1147,7 +1155,7 @@
         right: 13em;
     }
 
-<<<<<<< HEAD
+
     #lang2 {
         position: fixed;
         top: 3em;
@@ -1156,16 +1164,19 @@
         border-bottom: none;
         right: 13em;
     }
-=======
-html {
-    background: url/*(../images/gaspar-sax-web-5.jpg)*/ no-repeat top right fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 
-}
+    html {
+        background: url/*(../images/gaspar-sax-web-5.jpg)*/ no-repeat top right fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 
+    }
+
+    body {
+		overflow: visible;
+	}
 
 
 
@@ -1333,8 +1344,7 @@ html {
 
 
 
-<<<<<<< HEAD
-=======
+
 article {
     display: table-cell;
     vertical-align: middle;
