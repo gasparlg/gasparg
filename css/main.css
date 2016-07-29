@@ -880,6 +880,7 @@ and (-webkit-min-device-pixel-ratio: 1)  {
         -webkit-animation: none;
         -ms-animation: none;
         animation: none;
+        width: 100%;
     }
 
 }
@@ -981,7 +982,6 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 		#bg {
 			background-size: 300px auto;
 			width: 900px;
-            background-repeat: no-repeat;
             -moz-animation: bg 0s linear infinite;
             -webkit-animation: bg 0s linear infinite;
             -ms-animation: bg 0s linear infinite;
@@ -990,6 +990,7 @@ and (-webkit-min-device-pixel-ratio: 1)  {
             -webkit-animation: none;
             -ms-animation: none;
             animation: none;
+            width: 100%;
             
 		}
 
@@ -1104,7 +1105,6 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 		#bg {
 			background-size: 412.5px auto;
 			width: 1237.5px;
-            background-repeat: no-repeat;
             -moz-animation: bg 0s linear infinite;
             -webkit-animation: bg 0s linear infinite;
             -ms-animation: bg 0s linear infinite;
@@ -1113,6 +1113,7 @@ and (-webkit-min-device-pixel-ratio: 1)  {
             -webkit-animation: none;
             -ms-animation: none;
             animation: none;
+            width: 100%;
 		}
 
 	/* Header */
