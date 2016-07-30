@@ -1183,7 +1183,9 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 
     #lang2 {
         position: fixed;
-        top: 6.5em;
+        top: 6.5
+            
+            em;
         left: .5em;
         text-align: left;
         border-bottom: none;
