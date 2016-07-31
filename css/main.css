@@ -968,6 +968,12 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 			margin: 1.5em 0 5em 0;
 		}
         
+        #header nav li {
+            padding: 0 5em;
+            margin: 0em 0 5em 0;
+		} 
+            
+        
         #lang1 {
             position: relative;
             top: 3em;
