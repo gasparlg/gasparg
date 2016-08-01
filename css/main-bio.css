@@ -1580,7 +1580,8 @@ and (min-device-width : 1800px) {
     }
     
     #wrapper {
-            height: 120%;
+            height: 150%;
+            /*height: 120%;*/
         }
 
 }
