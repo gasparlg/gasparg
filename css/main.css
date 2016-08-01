@@ -1424,6 +1424,15 @@ and (orientation : landscape) {
     #header nav {
         margin-bottom: 5em;
     }
+    
+    #header lang1 {
+        top: 6em;
+    }
+    
+    #header lang2 {
+        top: 6em;
+    }
+    
 }
 
 
