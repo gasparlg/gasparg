@@ -1329,9 +1329,13 @@ and (min-device-width : 1800px) {
 			/* width: 4500px; */
 	}
     
+    /* The following controls the size of the profile picture on the home page */
+    /* Check that the resizing of the page works well with the img size */
+    /* Try % or em */
+    
     #header img {
-        width: 35%;
-        height: 35%;
+        width: 25%;
+        height: 25%;
     }
     
     #header h1 {
@@ -1359,6 +1363,32 @@ and (min-device-width : 1800px) {
 }
 
 
+
+
+/* Iphone 6s plus */
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) { 
+    
+    /* STYLES GOES HERE */
+    /* I should add margin to the bottom of the nav so it doesnt sit half on top of the mountains on landscape */
+}
+
+
+
+
+
+/* Iphone 6 portrait and landscape */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+    
+    /* STYLES GO HERE */ 
+    /* I should add margin to the bottom of the nav so it doesnt sit half on top of the mountains on both portrait and landscape */
+}
 
 
 

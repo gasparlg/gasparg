@@ -1561,17 +1561,20 @@ body {
 
 
 
-/* iMac 21 and higher */
+/* IMAC 21 AND HIGHER */
 
 @media only screen 
 and (min-device-width : 1800px) {
+    
+    /* This controls the text of the bio */
+    /* I should delete the repetition of margin */
 
     #header p {
         font-size: 1.5em;
         margin: 0.75em 0 0.25em 0;
         opacity: 0.75;
-        margin-right: 23em;
-        margin-left: 23em;
+        margin-right: 26%;
+        margin-left: 26%;
         text-align: justify;
     }
     
@@ -1596,6 +1599,20 @@ and (orientation : portrait) {
 }
 
 
+/* Iphone 6 portriat */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { 
+    
+    /* STYLES GO HERE */ 
+    /* I should add margin to the bottom of the nav so it doesnt sit half on top of the mountains on portrait */
+}
+
+
+/* ipad pro */
+
 @media only screen 
 and (min-device-width : 1024px) 
 and (max-device-width : 1366px)
@@ -1605,3 +1622,7 @@ and (orientation : portrait) {
          height: 120%;
     }
 }
+
+
+
+
