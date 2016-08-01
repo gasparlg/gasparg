@@ -1321,7 +1321,8 @@ article {
 */
     
 @media only screen 
-and (min-device-width : 1800px) {
+and (min-device-width : 1800px) 
+and (max-device-width : 1999px) {
     
     
     #bg {
@@ -1334,8 +1335,8 @@ and (min-device-width : 1800px) {
     /* Try % or em */
     
     #header img {
-        width: 7%;
-        height: 7%;
+        width: 20%;
+        height: 20%;
     }
     
     #header h1 {
@@ -1360,6 +1361,19 @@ and (min-device-width : 1800px) {
         font-size: 1.7em;
     }
 
+}
+
+
+/* iMac 27 media query - does it work? */
+
+@media only screen 
+and (min-device-width : 2000px) {
+    
+    #header img {
+        width: 15%;
+        height: 15%;
+    }
+    
 }
 
 

@@ -1562,10 +1562,11 @@ body {
 
 
 
-/* IMAC 21 AND HIGHER */
+/* IMAC 21 */
 
 @media only screen 
-and (min-device-width : 1800px) {
+and (min-device-width : 1800px)
+and (max-device-width : 1999px) {
     
     /* This controls the text of the bio */
     /* I should delete the repetition of margin */
@@ -1580,10 +1581,35 @@ and (min-device-width : 1800px) {
     }
     
     #wrapper {
-            height: 160%;
-            /*height: 120%;*/
+            height: 170%;
+            /* height: 160%; */
+            /* height: 120%; */
         }
 
+}
+
+
+/* iMac 27 media query - does it work? */
+
+@media only screen 
+and (min-device-width : 2000px) {
+    
+    #header p {
+        /* font-size: 1.5em; */
+        font-size: 1.2em;
+        margin: 0.75em 0 0.25em 0;
+        opacity: 0.75;
+        margin-right: 26%;
+        margin-left: 26%;
+        text-align: justify;
+    }
+    
+    #wrapper {
+            height: 170%;
+            /* height: 160%; */
+            /* height: 120%; */
+    }
+    
 }
 
 
