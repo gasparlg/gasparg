@@ -1405,6 +1405,28 @@ and (max-device-width : 667px) {
 }
 
 
+/* Iphone 6 landscape */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px)
+and (orientation : landscape) {
+    
+    /* STYLES GO HERE */ 
+    /* I should add margin to the bottom of the nav so it doesnt sit half on top of the mountains on both portrait and landscape */
+    
+    /* I'll try with these settings */
+    
+    #header img {
+        margin-top: 5em;
+    }
+    
+    #header nav {
+        margin-bottom: 5em;
+    }
+}
+
+
 
 
 
