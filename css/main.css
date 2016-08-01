@@ -1334,8 +1334,8 @@ and (min-device-width : 1800px) {
     /* Try % or em */
     
     #header img {
-        width: 25%;
-        height: 25%;
+        width: 15%;
+        height: 15%;
     }
     
     #header h1 {
