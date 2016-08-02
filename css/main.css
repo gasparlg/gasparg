@@ -1340,7 +1340,8 @@ and (max-device-width : 2500px) {
     }
     
     #header h1 {
-        font-size: 3.7em;
+        /* font-size: 3.7em; */
+        font-size: 3em;
     }
     
     #header p {
