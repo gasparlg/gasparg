@@ -1572,7 +1572,8 @@ and (max-device-width : 2500px) {
     /* I should delete the repetition of margin */
 
     #header p {
-        font-size: 1.2em;
+        /* font-size: 1.2em; */
+        font-size: 0.5em;
         margin: 0.75em 0 0.25em 0;
         opacity: 0.75;
         margin-right: 26%;
@@ -1595,7 +1596,7 @@ and (max-device-width : 2500px) {
 and (min-device-width : 2501px) {
     
     #header p {
-        /* font-size: 1.5em; */
+        /* font-size: 1.2em; */
         font-size: 1em;
         margin: 0.75em 0 0.25em 0;
         opacity: 0.75;
