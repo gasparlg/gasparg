@@ -1345,7 +1345,8 @@ and (max-device-width : 2500px) {
     }
     
     #header p {
-		font-size: 1.6em;
+		font-size: 1.3em;
+        /* font-size: 1.6em; */
     }
     
     #back:hover { 
