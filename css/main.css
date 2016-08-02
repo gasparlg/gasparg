@@ -1322,12 +1322,12 @@ article {
     
 @media only screen 
 and (min-device-width : 1800px) 
-and (max-device-width : 1999px) {
+and (max-device-width : 2500px) {
     
     
     #bg {
-			background-size: 850px auto;
-			/* width: 4500px; */
+        background-size: 850px auto;
+        /* width: 4500px; */
 	}
     
     /* The following controls the size of the profile picture on the home page */
@@ -1367,12 +1367,17 @@ and (max-device-width : 1999px) {
 /* iMac 27 media query - does it work? */
 
 @media only screen 
-and (min-device-width : 2000px) {
+and (min-device-width : 2501px) {
     
     #header img {
         width: 15%;
         height: 15%;
     }
+    
+    #bg {
+        background-size: 850px auto;
+        /* width: 4500px; */
+	}
     
 }
 
