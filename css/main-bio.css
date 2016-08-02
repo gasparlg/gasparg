@@ -1566,7 +1566,7 @@ body {
 
 @media only screen 
 and (min-device-width : 1800px)
-and (max-device-width : 2500px) {
+and (max-device-width : 2400px) {
     
     /* This controls the text of the bio */
     /* I should delete the repetition of margin */
@@ -1587,7 +1587,7 @@ and (max-device-width : 2500px) {
         
     
     #wrapper {
-            height: 170%;
+            height: 160%;
             /* height: 160%; */
             /* height: 120%; */
         }
@@ -1598,7 +1598,7 @@ and (max-device-width : 2500px) {
 /* iMac 27 media query - does it work? */
 
 @media only screen 
-and (min-device-width : 2501px) {
+and (min-device-width : 2401px) {
     
     #header p {
         /* font-size: 1.2em; */
