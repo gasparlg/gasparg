@@ -1587,9 +1587,9 @@ and (max-device-width : 2300px) {
         
     
     #wrapper {
-            height: 140%;
-            /* height: 160%; */
-            /* height: 120%; */
+            height: 130%;
+            /* height: 140%; */
+            /* height: */
         }
 
 }
