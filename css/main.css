@@ -55,20 +55,87 @@
 
 
 
-/* Basic */
+/* BASIC */
 
 
-    #lang1 {
+    article {
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+        padding: 1rem;
+    } 
+    
+    /* Language Buttons */
+
+    .lang {
         position: absolute;
         top: 1em;
+    }
+
+    #lang1 {
         right: 6em;
     }
 
     #lang2 {
-        position: absolute;
-        top: 1em;
         right: 1em;
     }
+
+    .lang:hover {
+        font-size: 1em;
+    }
+
+    .lang:hover, .lang:focus {
+        background-color: rgba(255, 255, 255, 0.25);
+        transform: scale(1.2);
+    }
+
+    .lang {
+        -webkit-transition-duration: 1.2s;
+        -moz-transition-duration: 1.2s;
+        transition-duration: 1.2s;
+    }
+
+    .lang {
+        transition: all 0.2s ease-out;
+        padding: .2em;
+    }
+
+
+
+    /*  #back  |   "Bio" and "Blog" Buttons  */
+
+
+    #back:hover { 
+        font-size: 1.4em;
+    }
+
+    .back1 {
+        margin-right: 1em;
+        font-size: 1.3em;
+    }
+
+    .back2 {
+        margin-left: 1em;
+        font-size: 1.3em;
+    }
+
+    #back:hover, #back:focus {
+            background-color: rgba(255, 255, 255, 0.25);
+            transform: scale(1.2);
+        }
+
+    #back {
+        -webkit-transition-duration: 1.2s;
+        -moz-transition-duration: 1.2s;
+        transition-duration: 1.2s;
+    }
+
+    #back {
+        transition: all 0.2s ease-out;
+        padding: .2em;
+    }
+
+
 
 	body, input, select, textarea {
 		color: #fff;
@@ -106,7 +173,8 @@
 			border-color: transparent;
 		}
 
-/* Icon */
+
+/* Icon - Social Media Buttons */
 
 	.icon {
 		text-decoration: none;
@@ -125,6 +193,7 @@
 		.icon > .label {
 			display: none;
 		}
+
 
 /* Wrapper */
 
@@ -180,6 +249,7 @@
 		top: 0;
 		width: 100%;
 	}
+
 
 /* BG */
 
@@ -272,26 +342,13 @@
 		}
 	}
 
-/* old bg */
+    /* this fixed the issue of the bg going white */
 
-/* this fixed the issue of the bg going white */
+    #bg {
+          background-size: 2250px auto;
+          width: 6750px;
+    }
 
-#bg {
-		background-size: 2250px auto;
-		width: 6750px;
-	}
-
-/* new bg */
-
-/* with these settings the bg would go white in some size occassions */
-/* Delete these settings if the site works well with the other ones*/
-
-/*
-	#bg {
-		background-size: 650px auto;
-		/* width: 6750px; */
-	}
-*/
 
 
 
@@ -316,6 +373,14 @@
 			vertical-align: middle;
 			width: 1px;
 		}
+
+    /* Should I use position fixed or position absolute?? */
+
+    #main {       
+        position: absolute;
+    }
+
+
 
 /* Header */
 
@@ -656,15 +721,117 @@
 
 
 
-/* Wide */
+/* -----------MEDIA QUERIES----------- */
+
+
+
+
+
+
+
+/*   iMac 27 media query - does it work?   */
+
+/*   Min Width 2501px   */
+
+    @media only screen 
+    and (min-device-width : 2501px) {
+
+        
+        #header img {
+            width: 15%;
+            height: 15%;
+        }
+
+        #bg {
+            background-size: 850px auto;
+        }   
+}
+
+
+
+
+/*   iMac 21 media query   */
+
+/*   Min Width 1801px - Max Width 2500px   */
+    
+
+    @media only screen 
+    and (min-device-width : 1801px) 
+    and (max-device-width : 2500px) {
+
+
+        #bg {
+            background-size: 850px auto;
+            /* width: 4500px; */
+        }
+
+        /* The following controls the size of the profile picture on the home page */
+        /* Check that the resizing of the page works well with the img size */
+        /* Try % or em */
+
+        #header img {
+            width: 20%;
+            height: 20%;
+        }
+
+        #header h1 {
+            font-size: 3em;
+        }
+
+        #header p {
+            font-size: 1.4em;
+        }
+
+        #back:hover { 
+             font-size: 1.8em;
+        }
+
+        .back1 {
+            margin-right: 1em;
+            font-size: 1.5em;
+        }
+
+        .back2 {
+            margin-left: 1em;
+            font-size: 1.5em;
+        }
+}
+
+
+/*   Min Width 1500px - Max Width 1800px   */
+
+    @media only screen 
+    and (min-device-width : 1500px) 
+    and (max-device-width : 1800px) {
+
+        #header img {
+            width: 25%;
+            height: 25%;
+        }
+    
+}
+
+
+
+
+/* Max Widht 1680px */
+
+/* Mac Pro 13' */
 
 	@media screen and (max-width: 1680px) {
 
-		/* Basic */
 
-			body, input, select, textarea {
-				font-size: 13pt;
-			}
+        body, input, select, textarea {
+            font-size: 13pt;
+        }
+        
+        #header h1 {
+            font-size: 3.2em;
+		}
+        
+        #header p {
+            font-size: 1.3em;
+		}
 
 		/* BG */
 
@@ -733,26 +900,16 @@
 			}
 		}
         
-        /* Old bg settings */
-        /* Delete these settings if the site works well with the other ones*/
-        /*
-        #bg {
-			background-size: 1500px auto;
-			width: 4500px;
-		} 
-        */
-
 		#bg {
 			background-size: 650px auto;
-			/* width: 4500px; */
 		} 
-    }
+}
 
-/* Normal */
+
+/* Max Widht 1280px */
 
 	@media screen and (max-width: 1280px) {
 
-		/* Basic */
 
 			body, input, select, textarea {
 				font-size: 12pt;
@@ -825,44 +982,36 @@
 				transform: translate3d(-750px,0,0);
 			}
 		}
-        
-        /* Old bg settings */
-        /* Delete these settings if the site works well with the other ones*/
-        /*
-        #bg {
-			background-size: 750px auto;
-			width: 2250px;
-		} 
-        */
 
 		#bg {
 			background-size: 650px auto;
 			width: 2250px;
 		} 
-    }
-
-/* iPad Mini query*/
-
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 1)  { 
-    
-    #bg { 
-        -moz-animation: none;
-        -webkit-animation: none;
-        -ms-animation: none;
-        animation: none;
-        width: 100%;
-    }
-
 }
 
-/* Mobile */
+
+/* iPad Mini query | 768px - 1024px */
+
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px)
+    and (-webkit-min-device-pixel-ratio: 1)  { 
+
+
+        #bg { 
+            -moz-animation: none;
+            -webkit-animation: none;
+            -ms-animation: none;
+            animation: none;
+            width: 100%;
+        }
+}
+
+
+/* Max width 736px */
 
 	@media screen and (max-width: 736px) {
-
-		/* Basic */
+    
 
 			body {
 				min-width: 320px;
@@ -984,9 +1133,6 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 					animation-delay: .1s;
 				}
 
-        
-		/* BG */
-
 		#bg {
 			background-size: 500px auto;
 			width: 900px;
@@ -1001,8 +1147,6 @@ and (-webkit-min-device-pixel-ratio: 1)  {
             width: 100%;
             
 		}
-
-	/* Header */
 
 		#header h1 {
 			font-size: 2.5em;
@@ -1025,43 +1169,52 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 			} 
 }
 
-/* Mobile (Portrait) */
+
+
+/*  Max Width 536px   */
+
+    @media screen and (max-width: 534px) {
+        
+
+        .lang {
+            position: fixed;
+            left: .5em;
+            text-align: left;
+            border-bottom: none;
+            margin-right: 0;
+            padding-right: 0;
+            text-decoration: underline;
+            right: 22em;
+        }
+
+        #lang1 {
+            top: 4em;
+        }
+
+        #lang2 {
+            top: 6.5em;
+        }  
+
+        header img {
+            margin-top: 5em;
+        }
+}
+
+
+
+/* Max width 480px */
 
 	@media screen and (max-width: 480px) {
-        
-            body {
-                overflow: visible;
-            }
-        
-            #main {
-                height: inherit;
-                position: absolute;
-            }
-        
-            header img {
-                margin-top: 5em;
-            }
 
         
-        
-		/* BG */
+        header img {
+            margin-top: 5em;
+        }
 
 		#bg {
 			background-size: 400px auto;
 			width: 1237.5px;
-            -moz-animation: bg 0s linear infinite;
-            -webkit-animation: bg 0s linear infinite;
-            -ms-animation: bg 0s linear infinite;
-            animation: bg 0s linear infinite;
-            -moz-animation: none;
-            -webkit-animation: none;
-            -ms-animation: none;
-            animation: none;
-            width: 100%;
 		}
-
-	/* Header */
-            
         
         #lang1 {
             position: relative;
@@ -1074,342 +1227,88 @@ and (-webkit-min-device-pixel-ratio: 1)  {
             top: 5em;
             left: 1em;
         }
+}
+
+
+
+/*   Max Width 410px   */
+
+    @media screen and (max-width: 410px) {
         
-}
 
+        #header h1 {
+            font-size: 2em;
+        }
 
-/*  @media number 1   */
+        .lang {
+            position: fixed;
+            left: .1em;
+            text-align: left;
+            border-bottom: none;
+            right: 18em;
+        }
 
-@media screen and (max-width: 534px) {
-    #lang1 {
-        position: fixed;
-        top: 4em;
-        left: .5em;
-        text-align: left;
-        border-bottom: none;
-        margin-right: 0;
-        padding-right: 0;
-        text-decoration: underline;
-        right: 22em;
-    }
+        #lang1 {
+            top: 4em;
+        }
 
-    #lang2 {
-        position: fixed;
-        top: 6.5em;
-        left: .5em;
-        text-align: left;
-        border-bottom: none;
-        margin-right: 0;
-        padding-right: 0;
-        text-decoration: underline;
-        right: 22em;
-        /*border-bottom: 1px solid white;
-        right: 22em;*/
-    }  
-    
-    body {
-		overflow: visible;
-	}
-    
-    #main {
-        height: inherit;
-        position: absolute;
-    }
-    
-    header img {
-        margin-top: 5em;
-    }
-}
-
-
-/*  @media number 2   */
-
-@media screen and (max-width: 410px) {
-    #header h1 {
-        font-size: 2em;
-    }
-    
-    #lang1 {
-        position: fixed;
-        top: 4em;
-        left: .1em;
-        text-align: left;
-        border-bottom: none;
-        right: 18em;
-    }
-
-    #lang2 {
-        position: fixed;
-        top: 6.5em;
-        left:.1em;
-        text-align: left;
-        border-bottom: none;
-        right: 18em;
-    }
-    
-    body {
-		overflow: visible;
-	}
-    
-    #main {
-        height: inherit;
-        position: absolute;
-    }
-    
-    header img {
-        margin-top: 5em;
-    }
-}
-
-
-/*  @media number 3   */
-
-@media screen and (max-width: 330px) {
-    #header h1 {
-        font-size: 1.5em;
-    }
-    
-     #lang1 {
-        position: fixed;
-        top: 4em;
-        left: .1em;
-        text-align: left;
-        border-bottom: none;
-        right: 13em;
-    }
-
-
-    #lang2 {
-        position: fixed;
-        top: 6em;
-        left: .1em;
-        text-align: left;
-        border-bottom: none;
-        right: 13em;
-    }
-    
-    header img {
-        margin-top: 5em;
-    }
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    body {
-		overflow: visible;
-	}
-    
-    #main {
-        height: inherit;
-        position: absolute;
-    }
-    
-
-
-
-
-
-
-/*  #back    */
-
-
-#back:hover { 
-    font-size: 1.4em;
-}
-
-.back1 {
-    margin-right: 1em;
-    font-size: 1.3em;
-}
-
-.back2 {
-    margin-left: 1em;
-    font-size: 1.3em;
-}
-
-#back:hover, #back:focus {
-        background-color: rgba(255, 255, 255, 0.25);
-        transform: scale(1.2);
-    }
-
-#back {
-    -webkit-transition-duration: 1.2s;
-    -moz-transition-duration: 1.2s;
-    transition-duration: 1.2s;
-}
-
-#back {
-    transition: all 0.2s ease-out;
-    padding: .2em;
+        #lang2 {
+            top: 6.5em;
+        }
 }
 
 
 
+/*  Max Width 330px   */
+
+    @media screen and (max-width: 330px) {
+        
+        
+        #header h1 {
+            font-size: 1.5em;
+        }
+
+        .lang {
+            position: fixed;
+            left: .1em;
+            text-align: left;
+            border-bottom: none;
+            right: 13em;
+        }
+
+         #lang1 {
+            top: 4em;
+        }
 
 
-
-
-article {
-    display: table-cell;
-    vertical-align: middle;
-    width: 50%;
-    padding: 1rem;
-}  
-    
-
-    
-/*       MAIN STYLES       */
-
-
-
-.lang:hover {
-        font-size: 1em;
-    }
-
-.lang:hover, .lang:focus {
-        background-color: rgba(255, 255, 255, 0.25);
-        transform: scale(1.2);
-    }
-
-.lang {
-    -webkit-transition-duration: 1.2s;
-    -moz-transition-duration: 1.2s;
-    transition-duration: 1.2s;
-}
-
-.lang {
-    transition: all 0.2s ease-out;
-    padding: .2em;
+        #lang2 {
+            top: 6em;
+        }
 }
 
 
 
-#main {
-    left: 0;
-    text-align: center;
-    top: 0;
-    width: 100%;
-}
+/* ----------DEVICE SPECIFIC MEDIA QUERIES--------- */
+
+/* Check if these media queries affect the queries from up here */
 
 
 
-
-
-
-/* iMac 21 media query */
-
-
-/*
-@media 
-(-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) { 
-    
-*/
-    
-@media only screen 
-and (min-device-width : 1801px) 
-and (max-device-width : 2500px) {
-    
-    
-    #bg {
-        background-size: 850px auto;
-        /* width: 4500px; */
-	}
-    
-    /* The following controls the size of the profile picture on the home page */
-    /* Check that the resizing of the page works well with the img size */
-    /* Try % or em */
-    
-    #header img {
-        width: 20%;
-        height: 20%;
-    }
-    
-    #header h1 {
-        /* font-size: 3.7em; */
-        font-size: 3em;
-    }
-    
-    #header p {
-		font-size: 1.4em;
-        /* font-size: 1.6em; */
-    }
-    
-    #back:hover { 
-         font-size: 1.8em;
-    }
-
-    .back1 {
-        margin-right: 1em;
-        font-size: 1.5em;
-        /* font-size: 1.7em; */
-    }
-
-    .back2 {
-        margin-left: 1em;
-        font-size: 1.5em;
-        /* font-size: 1.7em; */
-    }
-
-}
-
-
-@media only screen 
-and (min-device-width : 1500px) 
-and (max-device-width : 1800px) {
-    
-    #header img {
-        width: 25%;
-        height: 25%;
-    }
-    
-}
-
-
-/* iMac 27 media query - does it work? */
-
-@media only screen 
-and (min-device-width : 2501px) {
-    
-    #header img {
-        width: 15%;
-        height: 15%;
-    }
-    
-    #bg {
-        background-size: 850px auto;
-        /* width: 4500px; */
-	}
-    
-}
 
 
 
 
 /* Iphone 6s plus */
 
-@media only screen 
-and (min-device-width : 414px) 
-and (max-device-width : 736px) 
-and (orientation : landscape) { 
-    
-    /* STYLES GOES HERE */
-    /* I should add margin to the bottom of the nav so it doesnt sit half on top of the mountains on landscape */
-}
+    @media only screen 
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px) 
+    and (orientation : landscape) { 
+
+        
+        /* STYLES GOES HERE */
+        /* I should add margin to the bottom of the nav so it doesnt sit half on top of the mountains on landscape */
+    }
 
 
 
@@ -1417,43 +1316,44 @@ and (orientation : landscape) {
 
 /* Iphone 6 portrait and landscape */
 
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) { 
-    
-    /* STYLES GO HERE */ 
-    /* I should add margin to the bottom of the nav so it doesnt sit half on top of the mountains on both portrait and landscape */
-}
+    @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) { 
+
+        
+        /* STYLES GO HERE */ 
+        /* I should add margin to the bottom of the nav so it doesnt sit half on top of the mountains on both portrait and landscape */
+    }
 
 
 /* Iphone 6 landscape */
 
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px)
-and (orientation : landscape) {
-    
-    /* STYLES GO HERE */ 
-    /* I should add margin to the bottom of the nav so it doesnt sit half on top of the mountains on both portrait and landscape */
-    
-    /* I'll try with these settings */
-    
-    #header img {
-        margin-top: 5em;
-    }
-    
-    #header nav {
-        margin-bottom: 5em;
-    }
-    
-    #header lang1 {
-        top: 6em;
-    }
-    
-    #header lang2 {
-        top: 6em;
-    }
-    
+    @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px)
+    and (orientation : landscape) {
+        
+
+        /* STYLES GO HERE */ 
+        /* I should add margin to the bottom of the nav so it doesnt sit half on top of the mountains on both portrait and landscape */
+
+        /* I'll try with these settings */
+
+        #header img {
+            margin-top: 5em;
+        }
+
+        #header nav {
+            margin-bottom: 5em;
+        }
+
+        #header lang1 {
+            top: 6em;
+        }
+
+        #header lang2 {
+            top: 6em;
+        }
 }
 
 
@@ -1473,5 +1373,4 @@ and (orientation : landscape) {
 
 
 
-/* ----------    (END DEFAULT STYLES SMALL SCREENS)    ----------------- */   
-
+/* ----------    (THE END)    ----------- */   
