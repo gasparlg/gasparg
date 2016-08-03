@@ -921,7 +921,7 @@
         
         #header p {
             font-size: 1.3em;
-		}
+        }
 
 
 		/* BG */
@@ -1026,6 +1026,10 @@
         
         #back {
             font-size: 1.6em;
+        }
+        
+        .lang {
+            font-size: 1.15em;
         }
 }
 
