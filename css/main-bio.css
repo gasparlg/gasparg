@@ -881,6 +881,11 @@
             height: 250em;
         }
         */
+        
+        #header p {
+			font-size: 1em;
+            line-height: 1.3em;
+		}
 }
     
 
