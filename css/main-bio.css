@@ -867,10 +867,6 @@
         #wrapper {
             height: 195%;
         }
-        
-        #header p:last-of-type {
-            margin-bottom: 50em;
-        }
 }
 
     @media only screen 
