@@ -816,8 +816,6 @@
 
 /* Max Widht 1680px */
 
-/* Mac Pro 13' */
-
 	@media screen and (max-width: 1680px) {
 
 
@@ -908,12 +906,22 @@
 
 /* Max Widht 1280px */
 
+/* Mac Pro 13' */
+
 	@media screen and (max-width: 1280px) {
 
 
-			body, input, select, textarea {
-				font-size: 12pt;
-			}
+        body, input, select, textarea {
+            font-size: 12pt;
+        }
+        
+        #header h1 {
+            font-size: 3.2em;
+		}
+        
+        #header p {
+            font-size: 1.3em;
+		}
 
 
 		/* BG */
@@ -1005,10 +1013,20 @@
             animation: none;
             width: 100%;
         }
+        
+        #header h1 {
+			font-size: 2em;
+		}
+
+		#header p {
+			font-size: 1em;
+		}
 }
 
 
 /* Max width 736px */
+
+/* Samsung S3 */
 
 	@media screen and (max-width: 736px) {
     
@@ -1153,7 +1171,7 @@
 		}
 
 		#header p {
-			font-size: 1.5em;
+			font-size: 1.37em;
 		}
 
 		#header nav {
