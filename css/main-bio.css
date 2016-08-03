@@ -863,10 +863,11 @@
 			font-size: 1.5em;
             line-height: 1.5em;
 		}
-        
+        /*
         #wrapper {
-            height: 195%;
+            height: 175%;
         }
+        */
 }
 
     @media only screen 
@@ -875,10 +876,11 @@
     and (-webkit-min-device-pixel-ratio: 1)
     and (orientation : portrait) {
         
-        
+        /*
         #wrapper {
             height: 250em;
         }
+        */
 }
     
 
