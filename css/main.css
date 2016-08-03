@@ -1000,6 +1000,8 @@
 
 /* iPad Mini query | 768px - 1024px */
 
+/* My iPad Mini */
+
     @media only screen 
     and (min-device-width : 768px) 
     and (max-device-width : 1024px)
@@ -1015,11 +1017,11 @@
         }
         
         #header h1 {
-			font-size: 2em;
+			font-size: 3em;
 		}
 
 		#header p {
-			font-size: 1em;
+			font-size: 1.4em;
 		}
 }
 
