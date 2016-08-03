@@ -854,6 +854,14 @@
             animation: none;
             width: 100%;
         }
+        
+        #header h1 {
+			font-size: 3.25em;
+		}
+        
+        #header p {
+			font-size: 1.6em;
+		}
 }
     
 
