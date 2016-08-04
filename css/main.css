@@ -1297,6 +1297,10 @@
             width: 25%;
             height: 25%;
         }
+        
+        #wrapper {
+            height: 100%;
+	    }
 }
 
 
