@@ -834,6 +834,20 @@
 }
 
 
+/* This should only affect the samsung s3 and similar*/
+
+@media only screen 
+and (min-device-width : 500px) 
+and (max-device-width : 1280px) 
+and (orientation : landscape) {
+    
+    
+    #bg {
+        background-size: 450px auto;
+    } 
+}
+
+
 
 
 /* iPad Mini non-retina */
