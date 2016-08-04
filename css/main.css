@@ -1042,12 +1042,12 @@
         
         #wrapper {
             /* check if this is good or not */
-            height: 105%;
+            height: 100%;
 	    }
 }
 
 
-/* ipad mini landscape? */
+/* ipad mini landscape */
 
     @media only screen 
     and (min-device-width : 768px) 
