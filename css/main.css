@@ -1039,7 +1039,31 @@
         #lang2 {
             right: .01em;
         }
+        
+        #wrapper {
+            /* check if this is good or not */
+            height: 110%;
+	    }
 }
+
+
+/* ipad mini landscape? */
+
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px)
+    and (-webkit-min-device-pixel-ratio: 1)  
+    and (orientation : landscape) { 
+        
+        
+        #bg {
+			background-size: 320px auto;
+        }
+}
+
+
+
+
 
 
 /* Max width 736px */
@@ -1190,7 +1214,7 @@
 
 		#header p {
 			font-size: 1.37em;
-            margin: 1.2em 0 0.25em 0;
+            margin: 1em 0 0.25em 0;
 		}
 
 		#header nav {
@@ -1238,6 +1262,7 @@
 }
 
 
+/* Samsung s3 portrait */
 
 /* Max width 480px */
 
@@ -1264,6 +1289,10 @@
             top: 5em;
             /* left: 1em; */
         }
+        
+        #header p {
+            margin: 1em 0 0.25em 0;
+		}
 }
 
 
