@@ -642,7 +642,94 @@
 
 
 
+
+
 /* ---------- MEDIA QUERIES ----------*/
+
+
+    
+    
+    
+    
+    
+    
+
+
+/* iMac 27 media query - does it work? */
+
+    @media only screen 
+    and (min-device-width : 2101px) {
+        
+
+        #header p {
+            /* font-size: 1.2em; */
+            font-size: 0.5em;
+            margin: 0.75em 0 0.25em 0;
+            opacity: 0.75;
+            margin-right: 30%;
+            margin-left: 30%;
+            text-align: justify;
+        }
+
+        #wrapper {
+            height: 170%;
+        }   
+}
+
+
+
+
+
+
+
+
+
+
+/* IMAC 21 */
+
+    @media only screen 
+    and (min-device-width : 1851px)
+    and (max-device-width : 2100px) {
+        
+    
+        /* This controls the text of the bio */
+        /* I should delete the repetition of margin */
+
+        #header p {
+            /* font-size: 1.2em; */
+            font-size: 1.1em;
+            margin: 0.75em 0 0.25em 0;
+            opacity: 0.75;
+            margin-right: 26%;
+            margin-left: 26%;
+            text-align: justify;
+        }
+
+        #header h1 {
+            font-size: 3em;
+        }
+
+        #wrapper {
+                height: 135%;
+        }
+
+        #bg {
+            background-size: 850px auto;
+            width: 4500px;
+        } 
+}
+
+
+    @media only screen 
+    and (min-device-width : 1600px)
+    and (max-device-width : 1850px) {
+
+        
+        /* This media query wanst working up to 5-08-16 because there was a curly missing */
+        #wrapper {
+            height: 150%;
+        }
+}
 
 
 
@@ -658,19 +745,25 @@
 	@media screen and (max-width: 1680px) {
 
 
-			body, input, select, textarea {
-				font-size: 13pt;
-			}
+        body, input, select, textarea {
+            font-size: 13pt;
+        }
         
-            body {
-                overflow: visible;
-            }
+        body {
+            overflow: visible;
+        }
         
-            #header p {
-                margin-right: 15em;
-                margin-left: 15em;
-            }
-
+        #header p {
+            margin-right: 15em;
+            margin-left: 15em;
+        }
+        
+        #bg {
+			background-size: 1500px auto;
+			width: 4500px;
+		} 
+        
+        
 		/* BG */
 
 			@-moz-keyframes bg {
@@ -688,7 +781,7 @@
 					transform: translate3d(-1500px,0,0);
 				}
 
-	}
+	   }
 
 		@-webkit-keyframes bg {
 			0% {
@@ -737,12 +830,61 @@
 				transform: translate3d(-1500px,0,0);
 			}
 		}
-
-		#bg {
-			background-size: 1500px auto;
-			width: 4500px;
-		} 
 }
+
+
+
+
+
+
+
+/* ipad pro */
+
+/* Min Width 1024px | Max Width 1366px */
+
+
+    @media only screen 
+    and (min-device-width : 1024px) 
+    and (max-device-width : 1366px)
+    and (orientation : portrait) { 
+
+
+        #wrapper {
+             height: 120%;
+        }
+}
+
+
+
+
+
+
+
+
+
+/* MACBOOK PRO 13 RETINA */
+/* MACBOOK AIR 11 ??? */
+
+/* Min Width 768px | Max Width 1366px */
+
+
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1366px) { 
+
+        /* STYLES GO HERE */
+        /* Increase a bit the height of the wrapper for the macbook air 11inch */
+
+        #wrapper {
+            height: 155%;  
+        }
+    
+}
+
+
+
+
+
 
 
 
@@ -751,14 +893,20 @@
 	@media screen and (max-width: 1280px) {
 
 
-			body, input, select, textarea {
-				font-size: 12pt;
-			}
+        body, input, select, textarea {
+            font-size: 12pt;
+        }
         
-            #header p {
-                margin-right: 13em;
-                margin-left: 13em;
-            }
+        #header p {
+            margin-right: 13em;
+            margin-left: 13em;
+        }
+        
+        #bg {
+			background-size: 750px auto;
+			width: 2250px;
+		} 
+        
 
 		/* BG */
 
@@ -776,8 +924,7 @@
 					-ms-transform: translate3d(-750px,0,0);
 					transform: translate3d(-750px,0,0);
 				}
-
-	}
+        }
 
 		@-webkit-keyframes bg {
 			0% {
@@ -826,25 +973,20 @@
 				transform: translate3d(-750px,0,0);
 			}
 		}
-
-		#bg {
-			background-size: 750px auto;
-			width: 2250px;
-		} 
 }
 
 
-/* This should only affect the samsung s3 and similar*/
+/* This should only affect the samsung s3 and similar ?? */
 
-@media only screen 
-and (min-device-width : 500px) 
-and (max-device-width : 1280px) 
-and (orientation : landscape) {
-    
-    
-    #bg {
-        background-size: 450px auto;
-    } 
+    @media only screen 
+    and (min-device-width : 500px) 
+    and (max-device-width : 1280px) 
+    and (orientation : landscape) {
+
+
+        #bg {
+            background-size: 450px auto;
+        } 
 }
 
 
@@ -885,8 +1027,18 @@ and (orientation : landscape) {
         #wrapper {
             height: 175%;
         }
-        
 }
+
+
+
+
+
+
+
+/* iPad Mini non-retina ONLY portrait */
+/* iPad normal 1 & 2 */
+
+/* Min Width 768px - Max Width 1024px | ONLY portrait */
 
     @media only screen 
     and (min-device-width : 768px) 
@@ -904,7 +1056,39 @@ and (orientation : landscape) {
             line-height: 1.3em;
 		}
 }
+
+
+
+
+
+
+
+
+
+/* iPad Mini Retina Landscape*/
+/* iPad normal 3 & 4 Landscape*/
+
+/* Min Width 768px - Max Width 1024px | ONLY portrait */
+
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation : landscape)
+    and (-webkit-min-device-pixel-ratio: 2)  { 
+
+        /* STYLES GO HERE */
+        /* Increase a bit the height of the wrapper */
+        /*
+        #wrapper {
+            height: 110em;  
+        }
+        */
+}
+
+
     
+
+
 
 
 
@@ -930,12 +1114,13 @@ and (orientation : landscape) {
         
         
         #header p {
-                margin-right: 8em;
-                margin-left: 8em;
-            }
+            margin-right: 8em;
+            margin-left: 8em;
+        }
+        
         #wrapper {
-                height: 110em;
-            }
+            height: 110em;
+        }
 }
 
 
@@ -948,12 +1133,13 @@ and (orientation : landscape) {
         
         
         #header p {
-                margin-right: 4em;
-                margin-left: 4em;
-            }
+            margin-right: 4em;
+            margin-left: 4em;   
+        }
+        
         #wrapper {
-                height: 107em;
-            }
+            height: 107em;
+        }
 }
 
 
@@ -1017,6 +1203,51 @@ and (orientation : landscape) {
 
 
 
+
+
+/* Iphone 6s plus Portrait */
+
+/* Min Width 414px | Max Width 736px */
+
+    @media only screen 
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px) 
+    and (orientation : portrait) { 
+
+
+        #wrapper {
+            height: 135em;
+        }
+}
+
+
+
+
+
+
+
+
+/* Iphone 6 portriat */
+
+/* Min Width 375px | Max Width 667px */
+
+    @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : landscape) { 
+
+
+        /* STYLES GO HERE */ 
+        /* I should add margin to the bottom of the nav so it doesnt sit half on top of the mountains on portrait */
+}
+
+
+
+
+
+
+
+
 /* Max Width 614px */
 
     @media screen and (max-width: 614px) {
@@ -1040,7 +1271,6 @@ and (orientation : landscape) {
             display: none;
         }
 
-
         #header p {
             margin-right: 3em;
             margin-left: 3em;
@@ -1050,76 +1280,6 @@ and (orientation : landscape) {
             height: 140em;
         }
         
-
-		/* BG */
-        
-            /*
-			@-moz-keyframes bg {
-				0% {
-					-moz-transform: translate3d(0,0,0);
-					-webkit-transform: translate3d(0,0,0);
-					-ms-transform: translate3d(0,0,0);
-					transform: translate3d(0,0,0);
-				}
-
-				100% {
-					-moz-transform: translate3d(-412.5px,0,0);
-					-webkit-transform: translate3d(-412.5px,0,0);
-					-ms-transform: translate3d(-412.5px,0,0);
-					transform: translate3d(-412.5px,0,0);
-				}
-
-	}
-
-		@-webkit-keyframes bg {
-			0% {
-				-moz-transform: translate3d(0,0,0);
-				-webkit-transform: translate3d(0,0,0);
-				-ms-transform: translate3d(0,0,0);
-				transform: translate3d(0,0,0);
-			}
-
-			100% {
-				-moz-transform: translate3d(-412.5px,0,0);
-				-webkit-transform: translate3d(-412.5px,0,0);
-				-ms-transform: translate3d(-412.5px,0,0);
-				transform: translate3d(-412.5px,0,0);
-			}
-			}
-
-		@-ms-keyframes bg {
-			0% {
-				-moz-transform: translate3d(0,0,0);
-				-webkit-transform: translate3d(0,0,0);
-				-ms-transform: translate3d(0,0,0);
-				transform: translate3d(0,0,0);
-			}
-
-			100% {
-				-moz-transform: translate3d(-412.5px,0,0);
-				-webkit-transform: translate3d(-412.5px,0,0);
-				-ms-transform: translate3d(-412.5px,0,0);
-				transform: translate3d(-412.5px,0,0);
-			}
-		}
-
-		@keyframes bg {
-			0% {
-				-moz-transform: translate3d(0,0,0);
-				-webkit-transform: translate3d(0,0,0);
-				-ms-transform: translate3d(0,0,0);
-				transform: translate3d(0,0,0);
-			}
-
-			100% {
-				-moz-transform: translate3d(-412.5px,0,0);
-				-webkit-transform: translate3d(-412.5px,0,0);
-				-ms-transform: translate3d(-412.5px,0,0);
-				transform: translate3d(-412.5px,0,0);
-			}
-		}
-        */
-
 		#bg {
 			background-size: 412.5px auto;
             width: 100%;
@@ -1129,6 +1289,8 @@ and (orientation : landscape) {
 			padding: 0 1em;
 		} 
 }
+
+
 
 
 
@@ -1155,24 +1317,27 @@ and (orientation : landscape) {
 
 
 
+
+
 /* Max Width 350px */
 
     @media screen and (max-width: 350px) {
 
 
         #header p {
-                    margin-right: 1em;
-                    margin-left: 1em;
+            margin-right: 1em;
+            margin-left: 1em;
         }
         
         #wrapper {
-                    height: 90em;
+            height: 90em;
         }
         
         #header h1 {
             font-size: 1.5em;
         }
 }
+
 
 
 
@@ -1193,9 +1358,9 @@ body {
 
 
 #back:hover, #back:focus {
-        background-color: rgba(255, 255, 255, 0.25);
-        transform: scale(1.2);
-    }
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: scale(1.2);
+}
 
 
 #back {
@@ -1333,155 +1498,17 @@ body {
 
 
 
-/* IMAC 21 */
-
-@media only screen 
-and (min-device-width : 1851px)
-and (max-device-width : 2100px) {
-    
-    /* This controls the text of the bio */
-    /* I should delete the repetition of margin */
-
-    #header p {
-        /* font-size: 1.2em; */
-        font-size: 1.1em;
-        margin: 0.75em 0 0.25em 0;
-        opacity: 0.75;
-        margin-right: 26%;
-        margin-left: 26%;
-        text-align: justify;
-    }
-    
-    #header h1 {
-        font-size: 3em;
-    }
-        
-    
-    #wrapper {
-            height: 135%;
-            /* height: 140%; */
-            /* height: */
-        }
-    
-    #bg {
-        background-size: 850px auto;
-        width: 4500px;
-    } 
-
-}
-
-
-@media only screen 
-and (min-device-width : 1600px)
-and (max-device-width : 1850px) {
- 
-    #wrapper {
-        height: 150%;
-}
-
-
-/* iMac 27 media query - does it work? */
-
-@media only screen 
-and (min-device-width : 2101px) {
-    
-    #header p {
-        /* font-size: 1.2em; */
-        font-size: 0.5em;
-        margin: 0.75em 0 0.25em 0;
-        opacity: 0.75;
-        margin-right: 30%;
-        margin-left: 30%;
-        text-align: justify;
-    }
-    
-    #wrapper {
-            height: 170%;
-            /* height: 160%; */
-            /* height: 120%; */
-    }
-    
-}
-
-
-
-/* Iphone 6s plus */
-
-@media only screen 
-and (min-device-width : 414px) 
-and (max-device-width : 736px) 
-and (orientation : portrait) { 
-    
-    #wrapper {
-        height: 135em;
-    }
-}
-
-
-/* Iphone 6 portriat */
-
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) 
-and (orientation : landscape) { 
-    
-    /* STYLES GO HERE */ 
-    /* I should add margin to the bottom of the nav so it doesnt sit half on top of the mountains on portrait */
-}
-
-
-/* ipad pro */
-
-@media only screen 
-and (min-device-width : 1024px) 
-and (max-device-width : 1366px)
-and (orientation : portrait) { 
-    
-    #wrapper {
-         height: 120%;
-    }
-}
-
-
-
-/* iPad Mini Retina Landscape*/
-/* iPad normal 3 & 4 Landscape*/
-
-
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape)
-and (-webkit-min-device-pixel-ratio: 2)  { 
-    
-    /* STYLES GO HERE */
-    /* Increase a bit the height of the wrapper */
-    /*
-    #wrapper {
-        height: 110em;  
-    }
-    */
-}
 
 
 
 
-/* MACBOOK PRO 13 RETINA */
-/* MACBOOK AIR 11 ??? */
-
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1366px) { 
-    
-    /* STYLES GO HERE */
-    /* Increase a bit the height of the wrapper for the macbook air 11inch */
-    
-    #wrapper {
-        height: 155%;  
-    }
-    
-}
 
 
 
 
+
+
+
+
+
+/* --- THE END --- */
