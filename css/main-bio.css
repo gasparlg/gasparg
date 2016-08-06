@@ -95,7 +95,8 @@
 			border-color: transparent;
 		}
 
-/*   Icon | Social Media Buttons   */
+
+/* Icon | Social Media Buttons */
 
 	.icon {
 		text-decoration: none;
@@ -114,6 +115,76 @@
 		.icon > .label {
 			display: none;
 		}
+
+
+/* Lnaguage Buttons */
+
+    #lang1 {
+        position: absolute;
+        top: 1em;
+        right: 6em;
+    }
+
+    #lang2 {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
+
+    .lang:hover {
+        font-size: 1em;
+    }
+
+    .lang:hover, .lang:focus {
+        background-color: rgba(255, 255, 255, 0.25);
+        transform: scale(1.2);
+    }
+
+    .lang {
+        -webkit-transition-duration: 1.2s;
+        -moz-transition-duration: 1.2s;
+        transition-duration: 1.2s;
+    }
+
+    .lang {
+        transition: all 0.2s ease-out;
+        padding: .2em;
+    }
+
+
+/* Line Paragraph Separator */
+
+    #separator {
+        border-bottom: 1.5px solid white;
+    }
+
+
+/* Back Button */
+
+    #back {
+        padding: .6em;
+        border: 1px solid white;
+        border-radius: 3.5em;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #back:hover, #back:focus {
+        background-color: rgba(255, 255, 255, 0.25);
+        transform: scale(1.2);
+    }
+
+    #back {
+        transition: all 0.2s ease-out;
+    }
+
+    #back:hover {
+        font-size: 1.1em;
+    }
+
+
 
 /* Wrapper */
 
@@ -878,7 +949,6 @@
         #wrapper {
             height: 155%;  
         }
-    
 }
 
 
@@ -1342,31 +1412,8 @@
 
 
 
-#separator {
-    border-bottom: 1.5px solid white;
-}
 
-#back {
-    padding: .6em;
-    border: 1px solid white;
-    border-radius: 3.5em;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-
-#back:hover, #back:focus {
-    background-color: rgba(255, 255, 255, 0.25);
-    transform: scale(1.2);
-}
-
-
-#back {
-    transition: all 0.2s ease-out;
-}
-
+/* What is this for?? For the back button?? Seems like yes */
 
 @-moz-keyframes back {
     0% {
@@ -1442,46 +1489,14 @@ body {
 
 
 
-    #back:hover {
-        font-size: 1.1em;
-    }
+  
 
 
 
 
 
 
-#lang1 {
-    position: absolute;
-    top: 1em;
-    right: 6em;
-}
 
-#lang2 {
-    position: absolute;
-    top: 1em;
-    right: 1em;
-}
-
-.lang:hover {
-        font-size: 1em;
-    }
-
-.lang:hover, .lang:focus {
-        background-color: rgba(255, 255, 255, 0.25);
-        transform: scale(1.2);
-    }
-
-.lang {
-    -webkit-transition-duration: 1.2s;
-    -moz-transition-duration: 1.2s;
-    transition-duration: 1.2s;
-}
-
-.lang {
-    transition: all 0.2s ease-out;
-    padding: .2em;
-}
 
 
 
