@@ -1,6 +1,9 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("font-awesome.min.css");
 
+/* How does this import url works? */
+
+
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -764,10 +767,9 @@
         
     
         /* This controls the text of the bio */
-        /* I should delete the repetition of margin */
+        /* I need to work on the margin */
 
         #header p {
-            /* font-size: 1.2em; */
             font-size: 1.1em;
             margin: 0.75em 0 0.25em 0;
             opacity: 0.75;
@@ -829,6 +831,7 @@
             margin-left: 15em;
         }
         
+        /* Should I delete the width? */
         #bg {
 			background-size: 1500px auto;
 			width: 4500px;
@@ -972,6 +975,7 @@
             margin-left: 13em;
         }
         
+        /* Should I delete the width? */
         #bg {
 			background-size: 750px auto;
 			width: 2250px;
@@ -1046,6 +1050,9 @@
 }
 
 
+
+
+
 /* This should only affect the samsung s3 and similar ?? */
 
     @media only screen 
@@ -1058,6 +1065,7 @@
             background-size: 450px auto;
         } 
 }
+
 
 
 
@@ -1088,10 +1096,6 @@
         #header p {
 			font-size: 1.5em;
             line-height: 1.5em;
-            /*
-            margin-right: 20%;
-            margin-left: 20%;
-            */
 		}
         
         #wrapper {
@@ -1413,6 +1417,13 @@
 
 
 
+
+
+
+
+
+
+
 /* What is this for?? For the back button?? Seems like yes */
 
 @-moz-keyframes back {
@@ -1498,7 +1509,7 @@
 
 
 
-
+/* And what is this? */
 
 #bg { 
     -moz-animation: none;
@@ -1507,10 +1518,6 @@
     animation: none;
     width: 100%;
 }
-
-
-
-
 
 
 

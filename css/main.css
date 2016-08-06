@@ -721,7 +721,11 @@
 
 
 
+
+
 /* -----------MEDIA QUERIES----------- */
+
+
 
 
 
@@ -750,6 +754,8 @@
 
 
 
+
+
 /*   iMac 21 media query   */
 
 /*   Min Width 1801px - Max Width 2500px   */
@@ -762,7 +768,6 @@
 
         #bg {
             background-size: 850px auto;
-            /* width: 4500px; */
         }
 
         /* The following controls the size of the profile picture on the home page */
@@ -798,18 +803,23 @@
 }
 
 
+
+
+
 /*   Min Width 1500px - Max Width 1800px   */
 
     @media only screen 
     and (min-device-width : 1500px) 
     and (max-device-width : 1800px) {
 
+        
         #header img {
             width: 25%;
             height: 25%;
         }
-    
 }
+
+
 
 
 
@@ -904,6 +914,10 @@
 }
 
 
+
+
+
+
 /* Max Widht 1280px */
 
 /* Mac Pro 13' */
@@ -922,6 +936,11 @@
         #header p {
             font-size: 1.3em;
         }
+        
+        #bg {
+			background-size: 650px auto;
+			width: 2250px;
+		} 
 
 
 		/* BG */
@@ -990,12 +1009,13 @@
 				transform: translate3d(-750px,0,0);
 			}
 		}
-
-		#bg {
-			background-size: 650px auto;
-			width: 2250px;
-		} 
 }
+
+
+
+
+
+
 
 
 /* iPad Mini query | 768px - 1024px */
@@ -1044,6 +1064,9 @@
             height: 100%;
 	    }
 }
+
+
+
 
 
 /* ipad mini landscape */
@@ -1261,6 +1284,9 @@
 }
 
 
+
+
+
 /* Samsung s3 portrait */
 
 /* Max width 480px */
@@ -1296,6 +1322,9 @@
 
 
 
+
+
+
 /*   Max Width 410px   */
 
     @media screen and (max-width: 410px) {
@@ -1321,6 +1350,10 @@
             top: 6.5em;
         }
 }
+
+
+
+
 
 
 
@@ -1350,6 +1383,8 @@
             top: 6em;
         }
 }
+
+
 
 
 
