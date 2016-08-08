@@ -782,7 +782,8 @@
         }
 
         #wrapper {
-                height: 135%;
+                /* height: 135%; */
+                height: 140%;
         }
 
         #bg {
@@ -799,7 +800,8 @@
         
         /* This media query wanst working up to 5-08-16 because there was a curly missing */
         #wrapper {
-            height: 150%;
+            /* height: 150%; */
+            height: 155%;
         }
 }
 
@@ -947,9 +949,11 @@
 
         /* STYLES GO HERE */
         /* Increase a bit the height of the wrapper for the macbook air 11inch */
+        /* Compare this new 160% warpper in the mac 11 to the video in my phone */
 
         #wrapper {
-            height: 155%;  
+            /* height: 155%; */
+            height: 160%; 
         }
 }
 
