@@ -57,14 +57,14 @@
 
 /* BASIC */
 
-
+    /*
     article {
         display: table-cell;
         vertical-align: middle;
         width: 50%;
         padding: 1rem;
     } 
-    
+    */
     /* Language Buttons */
 
     .lang {
@@ -238,10 +238,10 @@
 	}
 
 	#wrapper {
-		-moz-animation: wrapper 1s forwards;
-		-webkit-animation: wrapper 1s forwards;
-		-ms-animation: wrapper 1s forwards;
-		animation: wrapper 1s forwards;
+		-moz-animation: wrapper 0s forwards;
+		-webkit-animation: wrapper 0s forwards;
+		-ms-animation: wrapper 0s forwards;
+		animation: wrapper 0s forwards;
 		height: 100%;
 		left: 0;
 		opacity: 0;
@@ -529,10 +529,10 @@
 	}
 
 	#header {
-		-moz-animation: header 1.5s 0s forwards;
-		-webkit-animation: header 1.5s 0s forwards;
-		-ms-animation: header 1.5s 0s forwards;
-		animation: header 1.5s 0s forwards;
+		-moz-animation: header 0s 0s forwards;
+		-webkit-animation: header 0s 0s forwards;
+		-ms-animation: header 0s 0s forwards;
+		animation: header 0s 0s forwards;
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-ms-backface-visibility: hidden;
@@ -569,10 +569,10 @@
 		}
 
 			#header nav li {
-				-moz-animation: nav-icons 0.5s ease-in-out forwards;
-				-webkit-animation: nav-icons 0.5s ease-in-out forwards;
-				-ms-animation: nav-icons 0.5s ease-in-out forwards;
-				animation: nav-icons 0.5s ease-in-out forwards;
+				-moz-animation: nav-icons 0s ease-in-out forwards;
+				-webkit-animation: nav-icons 0s ease-in-out forwards;
+				-ms-animation: nav-icons 0s ease-in-out forwards;
+				animation: nav-icons 0s ease-in-out forwards;
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
@@ -589,7 +589,8 @@
 				top: 0;
 				width: 5.35em;
 			}
-
+                
+                /*
 				#header nav li:nth-child(1) {
 					-moz-animation-delay: .5s;
 					-webkit-animation-delay: .5s;
@@ -659,6 +660,7 @@
 					-ms-animation-delay: 2.75s;
 					animation-delay: 2.75s;
 				}
+                */
 
 			#header nav a {
 				-webkit-tap-highlight-color: transparent;
@@ -842,7 +844,8 @@
 		}
 
 		/* BG */
-
+        
+            /*
 			@-moz-keyframes bg {
 				0% {
 					-moz-transform: translate3d(0,0,0);
@@ -911,6 +914,7 @@
 		#bg {
 			background-size: 650px auto;
 		} 
+        */
 }
 
 
@@ -1009,6 +1013,7 @@
 				transform: translate3d(-750px,0,0);
 			}
 		}
+        
 }
 
 
@@ -1119,10 +1124,10 @@
         /* I want to stop every animation for 736px and under */
         
         #wrapper {
-            -moz-animation: wrapper .1s forwards;
-            -webkit-animation: wrapper .1s forwards;
-            -ms-animation: wrapper .1s forwards;
-            animation: wrapper .1s forwards;
+            -moz-animation: wrapper 0s forwards;
+            -webkit-animation: wrapper 0s forwards;
+            -ms-animation: wrapper 0s forwards;
+            animation: wrapper 0s forwards;
             height: 110%;
             left: 0;
             opacity: 0;
@@ -1132,19 +1137,19 @@
 	    }
         
         #header {
-            -moz-animation: header 0.1s 0s forwards;
-            -webkit-animation: header 0.1s 0s forwards;
-            -ms-animation: header 0.1s 0s forwards;
-            animation: header 0.1s 0s forwards;
+            -moz-animation: header 0s 0s forwards;
+            -webkit-animation: header 0s 0s forwards;
+            -ms-animation: header 0s 0s forwards;
+            animation: header 0s 0s forwards;
         }
         
         #header nav li {
-            -moz-animation: nav-icons 0.1s ease-in-out forwards;
-            -webkit-animation: nav-icons 0.1s ease-in-out forwards;
-            -ms-animation: nav-icons 0.1s ease-in-out forwards;
-            animation: nav-icons 0.1s ease-in-out forwards;
+            -moz-animation: nav-icons 0s ease-in-out forwards;
+            -webkit-animation: nav-icons 0s ease-in-out forwards;
+            -ms-animation: nav-icons 0s ease-in-out forwards;
+            animation: nav-icons 0s ease-in-out forwards;
         }
-        
+        /*
                 #header nav li:nth-child(1) {
 					-moz-animation-delay: .1s;
 					-webkit-animation-delay: .1s;
@@ -1214,7 +1219,7 @@
 					-ms-animation-delay: .1s;
 					animation-delay: .1s;
 				}
-
+            */
 		#bg {
 			background-size: 320px auto;
 			width: 900px;
